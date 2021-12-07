@@ -1,0 +1,89 @@
+#tietoa {
+    margin-right: 60px;
+}
+
+#text {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 570px;
+    background-image: url("../../../images/abc-g427c052e9_1920.jpg");
+    margin-top: 60px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+img {
+    max-height: 50px;
+    margin-left: 60px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+h2 {
+    display: contents;
+}
+
+#tehtävänumero {
+    display: contents;
+}
+
+#check {
+    font-size: 100px;
+    color: white;
+}
+
+#clear {
+    font-size: 100px;
+    color: white; 
+}
+
+#oikein {
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#väärin {
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 300px;
+}
+
+#vastaus {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+    
+#seuraavaV {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#seuraavaO {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#oikeinVastattu {
+    margin-top: 250px;
+}
