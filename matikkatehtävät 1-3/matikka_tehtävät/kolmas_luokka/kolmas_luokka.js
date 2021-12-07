@@ -3,9 +3,11 @@
 //muuttujat
 let num1 = Math.floor(Math.random() * 11);
 let num2 = Math.floor(Math.random() * 11);
+let num3 = Math.floor(Math.random() * 11);
 
 document.getElementById("num1").innerHTML = num1;
 document.getElementById("num2").innerHTML = num2;
+document.getElementById("num3").innerHTML = num3;
 
 let tehtävänumero = 1;
 document.getElementById("tehtävänumero").innerHTML = tehtävänumero;
@@ -33,7 +35,7 @@ syöttökenttä.addEventListener("keyup", function(enter) {
 
 //funktio tehtävien tarkistusta varten
 function tarkistus() {
-    let oikeaVastaus = num1 + num2;
+    let oikeaVastaus = num1 + num2 * num3;
     let syöttökenttä = document.getElementById("syöttökenttä").value;
 
     //jos vastaus on oikein asetetaan "oikeavastas-boxi" näkyviin ja lisätään oikein vastattu tehtävä
@@ -48,7 +50,6 @@ function tarkistus() {
 
     //suljetaan syöttökenttä käyttäjältä
     document.getElementById("syöttökenttä").disabled = true;
-
 }
 
 //seuraava -nappia painettaessa luodaan uusi laskutoimitus ja tyhjennetään vastauskenttä
@@ -56,9 +57,11 @@ function tarkistus() {
 function seuraava() {
     num1 = Math.floor(Math.random() * 11);
     num2 = Math.floor(Math.random() * 11);
+    num3 = Math.floor(Math.random() * 11);
 
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
+    document.getElementById("num3").innerHTML = num3;
 
     document.getElementById("syöttökenttä").value = "";
     document.getElementById("oikein").style.display = "none";
@@ -86,4 +89,3 @@ function seuraava() {
     //suorituksen tulos
     document.getElementById("oikeinVastattu").innerHTML = "Vastasit oikein " + oikeinVastattu + "/5 kysymyksistä.";
 }
-

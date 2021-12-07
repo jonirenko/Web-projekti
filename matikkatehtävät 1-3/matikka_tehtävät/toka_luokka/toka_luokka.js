@@ -1,8 +1,8 @@
 //Jesse Impiö
 
 //muuttujat
-let num1 = Math.floor(Math.random() * 11);
-let num2 = Math.floor(Math.random() * 11);
+let num1 = Math.floor(Math.random() * 6);
+let num2 = Math.floor(Math.random() * 6);
 
 document.getElementById("num1").innerHTML = num1;
 document.getElementById("num2").innerHTML = num2;
@@ -33,7 +33,7 @@ syöttökenttä.addEventListener("keyup", function(enter) {
 
 //funktio tehtävien tarkistusta varten
 function tarkistus() {
-    let oikeaVastaus = num1 + num2;
+    let oikeaVastaus = num1 * num2;
     let syöttökenttä = document.getElementById("syöttökenttä").value;
 
     //jos vastaus on oikein asetetaan "oikeavastas-boxi" näkyviin ja lisätään oikein vastattu tehtävä
@@ -48,14 +48,13 @@ function tarkistus() {
 
     //suljetaan syöttökenttä käyttäjältä
     document.getElementById("syöttökenttä").disabled = true;
-
 }
 
 //seuraava -nappia painettaessa luodaan uusi laskutoimitus ja tyhjennetään vastauskenttä
 //asetetaan "oikea- tai väärävastaus-boxi" näkymättömäksi
 function seuraava() {
-    num1 = Math.floor(Math.random() * 11);
-    num2 = Math.floor(Math.random() * 11);
+    num1 = Math.floor(Math.random() * 6);
+    num2 = Math.floor(Math.random() * 6);
 
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
@@ -86,4 +85,3 @@ function seuraava() {
     //suorituksen tulos
     document.getElementById("oikeinVastattu").innerHTML = "Vastasit oikein " + oikeinVastattu + "/5 kysymyksistä.";
 }
-
