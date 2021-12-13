@@ -1,0 +1,66 @@
+img {
+    max-height: 50px;
+    margin-left: 60px;
+}
+
+#tietoa {
+    margin-right: 60px;
+}
+
+h1, #subtitle {
+    text-align: center;
+}
+
+#text {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: auto;
+    background-image: url("../images/quiz.jpg");
+    background-size: cover;
+    margin-top: 60px;
+}
+
+#quiz {
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn-primary {
+    width: fit-content;
+    background-color: burlywood;
+    border: 1px solid burlywood;
+    color: black;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: cornsilk;
+    color: black;
+    border: 1px solid burlywood;
+    box-shadow: none;
+}
+
+.correct {
+    display: none;
+    background-color: rgb(144, 238, 144, 0.5);
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.incorrect {
+    display: none;
+    background-color: rgb(216, 112, 147, 0.5);
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+#footer {
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
