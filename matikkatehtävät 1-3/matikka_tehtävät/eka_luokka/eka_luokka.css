@@ -89,3 +89,17 @@ h2 {
 #oikeinVastattu {
     margin-top: 250px;
 }
+
+@media only screen and (max-width:767px) {
+    #text {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #text {
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+    }
+}
