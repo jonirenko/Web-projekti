@@ -15,60 +15,59 @@
     <script src="toka_luokka.js" defer></script>
   </head>
   <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../../../index.html"><img src="../../../images/Nimetön.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../../index.html">Etusivu</a>
-              </li>
-              <li id="tietoa" class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Tietoa</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../../index.html"><img src="../../../images/Nimetön.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../../index.html">Etusivu</a>
+            </li>
+            <li id="tietoa" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tietoa</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- GRID -->
     <div class="container">
-        <div>
-            <div id="content" class="row">
-                <div id="text" class="col-md-12">
-                    <h1 id="otsikko">Kirjoita kertolaskun tulos</h1>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                      <div id="kysymys">
-                        <h2 id="num1"></h2>
-                        <h2>x</h2>
-                        <h2 id="num2"></h2>
-                        <h2>=</h2>
-                        <h2>?</h2>
-                      </div>
-                      <input id="syöttökenttä" type="number">
-                      <button id="tarkistus" onclick="tarkistus()">Tarkista</button>
-                      <div id="kysymysNumero" class="kysymysNumero">Kysymys: <div class="kysymysNumero" id="tehtävänumero"></div>/5</div>
-                      <div id="oikein">
-                        <span id="check" class="material-icons">check</span><p>Vastauksesi on oikein!</p>
-                        <button id="seuraavaO" onclick="seuraava()">Seuraava</button>
-                      </div>
-                      <div id="väärin">
-                        <span id="clear" class="material-icons">clear</span><p>Vastauksesi on väärin.</p><p><div id="vastaus"></div></p>
-                        <button id="seuraavaV" onclick="seuraava()">Seuraava</button>
-                      </div>
-                      <p id="oikeinVastattu"></p>
-                    </div>
-                </div>
+      <div id="content" class="row">
+        <div id="text" class="col-md-12">
+          <h1 id="otsikko">Kirjoita kertolaskun tulos</h1>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <div id="kysymys">
+              <h2 id="num1"></h2>
+              <h2>x</h2>
+              <h2 id="num2"></h2>
+              <h2>=</h2>
+              <h2>?</h2>
             </div>
+            <input id="syöttökenttä" type="number">
+            <button id="tarkistus" onclick="tarkistus()">Tarkista</button>
+            <div id="kysymysNumero" class="kysymysNumero">Kysymys: <div class="kysymysNumero" id="tehtävänumero"></div>/5</div>
+            <div id="oikein">
+              <span id="check" class="material-icons">check</span><p>Vastauksesi on oikein!</p>
+              <button id="seuraavaO" onclick="seuraava()">Seuraava</button>
+            </div>
+            <div id="väärin">
+              <span id="clear" class="material-icons">clear</span><p>Vastauksesi on väärin.</p><p><div id="vastaus"></div></p>
+              <button id="seuraavaV" onclick="seuraava()">Seuraava</button>
+            </div>
+            <p id="oikeinVastattu"></p>
+          </div>
         </div>
-        <footer>
-            <div class="row">
-                <div id="footer" class="col-md-12"></div>
-            </div>
-        </footer>
+      </div>
+      <footer>
+        <div class="row">
+          <div id="footer" class="col-md-12"></div>
+        </div>
+      </footer>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
