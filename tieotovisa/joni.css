@@ -20,11 +20,15 @@ h1, #subtitle {
     margin-top: 60px;
 }
 
-#quiz {
+#quiz, #header {
     background-color: beige;
     border: 1px solid black;
     border-radius: 5px;
     padding: 3px;
+}
+
+#header {
+    margin: 5px;
 }
 
 ul {
@@ -46,14 +50,14 @@ ul {
 }
 
 .correct {
-    display: none;
+    
     background-color: rgb(144, 238, 144, 0.5);
     border: 1px solid green;
     border-radius: 5px;
 }
 
 .incorrect {
-    display: none;
+    
     background-color: rgb(216, 112, 147, 0.5);
     border: 1px solid red;
     border-radius: 5px;
