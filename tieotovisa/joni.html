@@ -41,61 +41,53 @@
                     <p id="subtitle">Tietovisassa on viisi kysymystä ja jokaiseen kysymykseen neljä vastausvaihtoehtoa. Valitse vastauksesi ja klikkaa "Vastaa"-painiketta nähdäksesi tuloksesi.</p></div>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <div class="d-grid gap-2" id="quiz">
-                          <div id="question1">
                             <p>1. Kuka kehitti ensimmäisen umpirunkoisen sähkökitaran?</p>
                             <ul class="choices">
-                                <li><input type="radio" name="selected-1" id="" class="right"> Les Paul</li>
+                                <li><input type="radio" name="selected-1" id="right1"> Les Paul</li>
                                 <li><input type="radio" name="selected-1" id=""> Leo Fender</li>
                                 <li><input type="radio" name="selected-1" id=""> B.C. Rich</li>
                                 <li><input type="radio" name="selected-1" id=""> Paul Reed Smith</li>
                             </ul>
-                            <button class="btn btn-primary" type="button" id="quest1">Vastaa</button>
-                            <!-- <div id="question-1-correct" class="correct">Oikein!</div>
-                            <div id="question-1-incorrect" class="incorrect">Väärin!</div> -->
-                          </div>
+                            <div id="question-1-answer"></div>
 
                             <p>2. Mikä on Suomen kansallislintu?</p>
                             <ul>
                                 <li><input type="radio" name="selected-2" id=""> Västäräkki</li>
                                 <li><input type="radio" name="selected-2" id=""> Lapinpöllö</li>
-                                <li><input type="radio" name="selected-2" id="" class="right"> Laulujoutsen</li>
+                                <li><input type="radio" name="selected-2" id="right2"> Laulujoutsen</li>
                                 <li><input type="radio" name="selected-2" id=""> Pulu</li>
                             </ul>
-                            <button class="btn btn-primary" type="button" id="quest2">Vastaa</button>
-                            <!-- <div id="question-2-correct" class="correct">Oikein!</div>
-                            <div id="question-2-incorrect" class="incorrect">Väärin!</div> -->
+                            <div id="question-2-answer"></div>
+                            
 
                             <p>3. Montako jääkiekon maailmanmestaruutta Suomella on?</p>
                             <ul>
                                 <li><input type="radio" name="selected-3" id=""> 1</li>
                                 <li><input type="radio" name="selected-3" id=""> 5</li>
-                                <li><input type="radio" name="selected-3" id="" class="right"> 3</li>
+                                <li><input type="radio" name="selected-3" id="right3"> 3</li>
                                 <li><input type="radio" name="selected-3" id=""> Ei yhtään</li>
                             </ul>
-                            <button class="btn btn-primary" type="button" id="quest3">Vastaa</button>
-                            <!-- <div id="question-3-correct" class="correct">Oikein!</div>
-                            <div id="question-3-incorrect" class="incorrect">Väärin!</div> -->
+                            <div id="question-3-answer"></div>
 
                             <p>4. Kuinka monta planeettaa aurinkokuntaan kuuluu?</p>
                             <ul>
                                 <li><input type="radio" name="selected-4" id=""> 7</li>
-                                <li><input type="radio" name="selected-4" id="" class="right"> 8</li>
+                                <li><input type="radio" name="selected-4" id="right4"> 8</li>
                                 <li><input type="radio" name="selected-4" id=""> 10</li>
                                 <li><input type="radio" name="selected-4" id=""> 9</li>
                             </ul>
-                            <button class="btn btn-primary" type="button" id="quest4">Vastaa</button>
-                            <!-- <div id="question-4-correct" class="correct">Oikein!</div>
-                            <div id="question-4-incorrect" class="incorrect">Väärin!</div> -->
+                            <div id="question-4-answer"></div>
 
                             <p>5. Mikä seuraavista EI ole Yhdysvaltain osavaltio?</p>
                             <ul>
-                                <li><input type="radio" name="selected-5" id="" class="right"> Guam</li>
-                                <li><input type="radio" name="selected-5" id="" class="right"> Puerto Rico</li>
-                                <li><input type="radio" name="selected-5" id="" class="right"> Neitsytsaaret</li>
-                                <li><input type="radio" name="selected-5" id="" class="right"> Washington D.C.</li>
+                                <li><input type="radio" name="selected-5" id=""> Guam</li>
+                                <li><input type="radio" name="selected-5" id=""> Puerto Rico</li>
+                                <li><input type="radio" name="selected-5" id=""> Neitsytsaaret</li>
+                                <li><input type="radio" name="selected-5" id=""> Washington D.C.</li>
                             </ul>
-                            <button class="btn btn-primary" type="button" id="quest5">Vastaa</button>
-                            <!-- <div id="question-5-correct" class="correct">Oikein! Kysymys on kompa; mikään näistä ei ole Yhdysvaltain osavaltio.</div> -->
+                            <div id="question-5-answer"></div>
+                            <button class="btn btn-primary" type="button" id="check-answers">Tarkista vastaukset</button>
+                            <div id="total"></div>
                         </div>
                     </div>
                 </div>
