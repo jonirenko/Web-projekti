@@ -1,6 +1,5 @@
-//Jesse Impiö
+// Jesse Impiö
 
-//muuttujat
 let num1 = Math.floor(Math.random() * 11);
 let num2 = Math.floor(Math.random() * 11);
 
@@ -10,19 +9,19 @@ document.getElementById("num2").innerHTML = num2;
 let tehtävänumero = 1;
 document.getElementById("tehtävänumero").innerHTML = tehtävänumero;
 
-//asetetaan oikein, väärin ja oikein vastattujen tehtävien tekstit näkymättömiksi
+// Asetetaan oikein, väärin ja oikein vastattujen tehtävien tekstit näkymättömiksi.
 document.getElementById("oikein").style.display = "none";
 document.getElementById("väärin").style.display = "none";
 document.getElementById("oikeinVastattu").style.display = "none";
 
-//muuttuja oikeille vastauksille
+// Muuttuja oikeille vastauksille.
 let oikeinVastattu = 0;
 document.getElementById("oikeinVastattu").innerHTML = oikeinVastattu;
 
-//kohdistetaan kursori vastauskenttään
+// Kohdistaa kursorin vastauskenttään.
 document.getElementById("syöttökenttä").focus();
 
-//halutessaan voi aktivoida tarkistus -napin painamalla enteriä
+// Halutessaan aktivoi tarkistus -napin painamalla enteriä.
 let syöttökenttä = document.getElementById("syöttökenttä");
 syöttökenttä.addEventListener("keyup", function(enter) {
   if (enter.keyCode === 13) {
@@ -31,13 +30,12 @@ syöttökenttä.addEventListener("keyup", function(enter) {
   }
 });
 
-//funktio tehtävien tarkistusta varten
+
+// Funktio tarkistaa, onko annettu vastaus oikein. Mikäli vastaus on oikein asetetaan "oikeavastas-boxi" näkyviin ja lisätään tehtävä oikein vastatuksi. Vastauksen ollessa väärin, asetetaan "väärävastaus-boxi" näkyviin.
 function tarkistus() {
     let oikeaVastaus = num1 + num2;
     let syöttökenttä = document.getElementById("syöttökenttä").value;
 
-    //jos vastaus on oikein asetetaan "oikeavastas-boxi" näkyviin ja lisätään oikein vastattu tehtävä
-    //jos ehto ei täyty, asetetaan "väärävastaus-boxi" näkyviin
     if (syöttökenttä == oikeaVastaus) {
         document.getElementById("oikein").style.display = "block";
         document.getElementById("oikeinVastattu").innerHTML = oikeinVastattu += 1;
@@ -46,13 +44,10 @@ function tarkistus() {
         document.getElementById("väärin").style.display = "block";
     }
 
-    //suljetaan syöttökenttä käyttäjältä
     document.getElementById("syöttökenttä").disabled = true;
-
 }
 
-//seuraava -nappia painettaessa luodaan uusi laskutoimitus ja tyhjennetään vastauskenttä
-//asetetaan "oikea- tai väärävastaus-boxi" näkymättömäksi
+// Funktio luo uuden laskutoimituksen ja tyhjentää vastauskentän. Samalla se asettaa "oikea- tai vääärävastaus-boxin" näkymättömäksi. Ja lisää tehtävänumeron. Jos käyttäjä on jo vastannut viiteen kysymykseen funktio piilottaa kaikki elementit ja näyttää suorituksen tuloksen.
 function seuraava() {
     num1 = Math.floor(Math.random() * 11);
     num2 = Math.floor(Math.random() * 11);
@@ -64,8 +59,6 @@ function seuraava() {
     document.getElementById("oikein").style.display = "none";
     document.getElementById("väärin").style.display = "none";
 
-    //lisätään tehtävänumero
-    //mikäli tehtäviä on tehty jo viisi seuraava -nappi piilottaa kikki elementit ja näyttää suorituksen tuloksen
     if (tehtävänumero < 5) {
         document.getElementById("tehtävänumero").innerHTML = tehtävänumero += 1;
     } else {
@@ -77,13 +70,9 @@ function seuraava() {
         document.getElementById("oikeinVastattu").style.display = "block";
     }
 
-    //avataan syöttökenttä käyttäjälle
     document.getElementById("syöttökenttä").disabled = false;
 
-    //kohdistetaan kursori vastauskenttään
     document.getElementById("syöttökenttä").focus();
 
-    //suorituksen tulos
     document.getElementById("oikeinVastattu").innerHTML = "Vastasit oikein " + oikeinVastattu + "/5 kysymyksistä.";
 }
-
