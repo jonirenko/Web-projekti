@@ -54,6 +54,7 @@ ul {
     background-color: rgb(144, 238, 144, 0.5);
     border: 1px solid green;
     border-radius: 5px;
+    padding-left: 2px;
 }
 
 .incorrect {
@@ -61,6 +62,7 @@ ul {
     background-color: rgb(216, 112, 147, 0.5);
     border: 1px solid red;
     border-radius: 5px;
+    padding-left: 2px;
 }
 
 #footer {
